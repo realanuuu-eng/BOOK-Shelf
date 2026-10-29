@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Beginner-friendly guides to commerce, finance, career choices, and practical skills.">
+<meta name="theme-color" content="#101827">
+<title>LearnSphere | Commerce, Finance & Careers</title>
+<style>
+:root{--ink:#182238;--muted:#64718a;--blue:#315fe8;--paper:#f5f7fb;--line:#e3e8f1;--navy:#101827;--card:#fff;--soft-blue:#eaf0ff;--green:#dff7eb}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:20px}body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}a{color:inherit}button,input,select{font:inherit}.wrap{width:min(1100px,92%);margin:auto}header{background:var(--navy);color:#fff}
+nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.15rem 0}.brand{font-size:1.32rem;font-weight:850;letter-spacing:-.045em;text-decoration:none}.brand-mark{display:inline-grid;place-items:center;width:30px;height:30px;margin-right:.4rem;border-radius:9px;background:#315fe8;font-size:.9rem}.navlinks{display:flex;flex-wrap:wrap;gap:1.15rem}.navlinks a{text-decoration:none;color:#d3dced;font-size:.93rem}.navlinks a:hover{color:#fff}
+.hero{padding:4.6rem 0 4.3rem;max-width:780px}.eyebrow{display:inline-block;color:#a9c5ff;text-transform:uppercase;font-size:.77rem;font-weight:800;letter-spacing:.13em}h1{font-size:clamp(2.45rem,6.5vw,4.65rem);line-height:1.05;letter-spacing:-.065em;margin:.8rem 0 1.1rem}.hero p{max-width:650px;color:#d2dbea;font-size:clamp(1rem,2vw,1.15rem);margin:0 0 1.5rem}.actions{display:flex;flex-wrap:wrap;align-items:center;gap:.8rem}.button{display:inline-flex;justify-content:center;align-items:center;border:1px solid transparent;border-radius:11px;padding:.78rem 1.05rem;background:var(--blue);color:#fff;text-decoration:none;font-weight:750;cursor:pointer}.button:hover{filter:brightness(1.07)}.button.secondary{background:transparent;border-color:#536078;color:#fff}.trustline{color:#aebbd0;font-size:.86rem;margin-top:1.1rem}
+main{padding:3rem 0 4rem}.intro-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:.9rem;margin-bottom:3rem}.intro-item{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1.05rem}.intro-item strong{display:block;margin-bottom:.2rem}.intro-item span{color:var(--muted);font-size:.91rem}.section-head{display:flex;align-items:end;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:1.1rem}h2{font-size:clamp(1.55rem,3vw,2rem);letter-spacing:-.045em;margin:0;line-height:1.2}.section-head p{color:var(--muted);margin:.4rem 0 0}
+.tools{display:flex;flex-wrap:wrap;gap:.65rem;margin:1.25rem 0 1.5rem}input,select{min-height:46px;border:1px solid #d9e0eb;border-radius:10px;padding:.68rem .85rem;background:#fff;color:var(--ink)}input{flex:1;min-width:210px}select{min-width:155px}input:focus,select:focus,button:focus-visible,a:focus-visible{outline:3px solid #9ab4ff;outline-offset:2px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}.card{display:flex;flex-direction:column;min-height:260px;padding:1.25rem;border:1px solid var(--line);border-radius:16px;background:var(--card);box-shadow:0 5px 20px #13213c08;transition:transform .18s ease,box-shadow .18s ease}.card:hover{transform:translateY(-3px);box-shadow:0 12px 28px #13213c10}.tag{align-self:flex-start;border-radius:999px;padding:.24rem .62rem;background:var(--soft-blue);color:#244bb0;font-size:.75rem;font-weight:800}.tag.finance{background:var(--green);color:#176541}.card h3{font-size:1.17rem;line-height:1.35;letter-spacing:-.025em;margin:.9rem 0 .45rem}.card p{color:var(--muted);font-size:.94rem;margin:0 0 1rem}.meta{font-size:.79rem;color:#7b8799;margin-bottom:.75rem}.read{margin-top:auto;align-self:flex-start;padding:.1rem 0;border:0;background:none;color:var(--blue);font-weight:800;cursor:pointer}.empty{grid-column:1/-1;padding:2rem;text-align:center;border:1px dashed #ccd5e4;border-radius:14px;color:var(--muted);background:#fff}
+.about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:1rem;margin-top:3rem}.about,.newsletter{border-radius:17px;padding:1.55rem}.about{background:#eaf0fb}.about p{color:#4c5a70;margin-bottom:0}.newsletter{background:#fff;border:1px solid var(--line)}.newsletter p{color:var(--muted);margin:.5rem 0 1rem}.note{color:var(--muted);font-size:.78rem;margin-top:.7rem}footer{background:var(--navy);color:#c9d3e2;padding:1.4rem 0;font-size:.9rem}footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.8rem}footer a{color:#fff}
+dialog{width:min(720px,92%);max-height:86vh;overflow:auto;border:0;border-radius:18px;padding:0;color:var(--ink);box-shadow:0 22px 80px #0005}dialog::backdrop{background:#09101dcc}.modal{padding:clamp(1.2rem,4vw,2rem)}.modal-top{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem}.close{border:1px solid var(--line);border-radius:9px;background:#fff;padding:.45rem .7rem;cursor:pointer}.article-content{color:#35435a;white-space:pre-line}.disclaimer{font-size:.82rem;color:var(--muted);border-top:1px solid var(--line);padding-top:.8rem;margin-top:1.5rem}
+@media(max-width:780px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.about-grid{grid-template-columns:1fr}.hero{padding:3.4rem 0}}@media(max-width:560px){.grid,.intro-strip{grid-template-columns:1fr}nav{align-items:flex-start;flex-direction:column}.navlinks{gap:1rem}.card{min-height:220px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card{transition:none}.card:hover{transform:none}}
+</style>
+</head>
+<body>
+<header id="home"><div class="wrap">
+<nav aria-label="Main navigation"><a class="brand" href="#home"><span class="brand-mark">L</span>LearnSphere</a><div class="navlinks"><a href="#articles">Articles</a><a href="#about">About</a><a href="#contact">Contact</a></div></nav>
+<section class="hero"><span class="eyebrow">Commerce · Finance · Careers</span><h1>Understand more.<br>Build your future.</h1><p>Clear, practical guides for students and curious beginners. Explore career options, understand money, and build useful skills — one step at a time.</p><div class="actions"><a class="button" href="#articles">Explore articles ↓</a><a class="button secondary" href="#about">About LearnSphere</a></div><div class="trustline">Beginner-friendly explanations · Practical next steps · No jargon required</div></section>
+</div></header>
+<main class="wrap">
+<section class="intro-strip" aria-label="What you'll learn"><div class="intro-item"><strong>🎓 Career clarity</strong><span>Compare study paths and career skills.</span></div><div class="intro-item"><strong>📊 Finance basics</strong><span>Understand budgeting and business concepts.</span></div><div class="intro-item"><strong>💻 Practical skills</strong><span>Explore tools that can support your growth.</span></div></section>
+<section id="articles"><div class="section-head"><div><h2>Explore the library</h2><p>Search for a topic or choose a category to get started.</p></div></div>
+<div class="tools"><input id="search" type="search" placeholder="Search careers, budgeting, Excel..." aria-label="Search articles"><select id="category" aria-label="Filter articles by category"><option value="All">All categories</option><option value="Careers">Careers</option><option value="Finance">Finance</option><option value="Commerce">Commerce</option><option value="Skills">Practical skills</option></select></div><div class="grid" id="articleGrid" aria-live="polite"></div></section>
+<section class="about-grid"><div class="about" id="about"><h2>About LearnSphere</h2><p>LearnSphere is an educational blog about commerce, finance and career development. The aim is simple: explain ideas clearly, help readers ask better questions, and turn learning into practical next steps. Add your own story here as the blog grows.</p></div>
+<div class="newsletter" id="contact"><h2>Stay curious</h2><p>Want to suggest a topic? Use the email link below to contact the site owner.</p><a class="button" href="mailto:hello@example.com?subject=LearnSphere%20topic%20suggestion">Suggest a topic</a><div class="note">Before publishing, replace hello@example.com with your own email address. This button opens the visitor's email app; it does not collect email addresses.</div></div></section>
+</main>
+<footer><div class="wrap"><span>© <span id="year"></span> LearnSphere</span><span>Made for learning · <a href="#home">Back to top ↑</a></span></div></footer>
+<dialog id="articleDialog" aria-labelledby="dialogTitle"><div class="modal"><div class="modal-top"><div><span class="tag" id="dialogCategory"></span><h2 id="dialogTitle" style="margin-top:.75rem"></h2><div class="meta" id="dialogMeta"></div></div><button class="close" id="closeDialog" aria-label="Close article">Close ✕</button></div><div class="article-content" id="dialogBody"></div><p class="disclaimer">Educational content only. Verify important education, tax, and financial information with official sources or a qualified professional before acting.</p></div></dialog>
+<script>
+// Edit or add articles in this list. Categories: Careers, Finance, Commerce, Skills.
+const articles = [
+{title:"Commerce career options after Class 12",category:"Careers",readTime:"4 min read",description:"A practical way to compare CA, B.Com, management, finance and analytics paths.",body:`Commerce can lead to several paths, including accounting, taxation, banking, finance, marketing, business operations and data analytics.
+
+How to compare your options:
+1. Look at the day-to-day work, not just the job title.
+2. Check the qualification, time and cost involved.
+3. Speak to someone studying or working in that field.
+4. Try a small project or beginner lesson before paying for a course.
+
+You do not need to decide your entire future at once. Choose one option to investigate, set a short trial period, and review what you learned.`},
+{title:"CA or another career: how to think it through",category:"Careers",readTime:"5 min read",description:"Separate genuine interest from pressure, fear and the reputation of a qualification.",body:`CA can suit people who are interested in accounting, audit, taxation and detailed financial work. It also requires sustained preparation and a commitment to professional exams.
+
+If you are unsure, ask yourself:
+• Do I dislike the actual subjects, or am I overwhelmed by the exams?
+• Would I still consider this path if nobody else had an opinion about it?
+• Have I explored alternatives enough to compare them fairly?
+
+Keep your current college work on track while you investigate alternatives. Before changing course or stopping exam preparation, check registration rules, deadlines and the financial consequences.`},
+{title:"Your first steps into data analysis",category:"Skills",readTime:"4 min read",description:"Learn how Excel, SQL and dashboards can help answer business questions.",body:`Data analysis means using information to answer questions and support decisions.
+
+A beginner sequence:
+1. Excel: formulas, sorting, filters, charts and pivot tables.
+2. SQL: retrieve and summarise information from a database.
+3. A dashboard tool such as Power BI: present findings clearly.
+4. Projects: use sample data to answer a real question and explain your conclusions.
+
+Start with one small spreadsheet project. You do not need to master every tool at once, and a course certificate alone does not guarantee a job.`},
+{title:"Budgeting basics for students",category:"Finance",readTime:"3 min read",description:"A simple way to understand where your money goes and plan expenses.",body:`A budget is a plan for the money you receive and spend. Begin by writing down your income or allowance and your usual expenses.
+
+Try these steps:
+1. Track spending for a few weeks.
+2. Group expenses into categories such as travel, food, study and entertainment.
+3. Identify one realistic change if you need to free up money.
+4. Set a savings target only if your current situation allows it.
+
+A budget should help you make informed choices, not make you feel guilty about necessary spending.`},
+{title:"Revenue, profit and cash flow explained",category:"Commerce",readTime:"4 min read",description:"Three business terms that sound similar but mean different things.",body:`Revenue is the money a business earns from selling goods or services before expenses are deducted.
+
+Profit is what remains after the relevant expenses are deducted from revenue.
+
+Cash flow describes money moving into and out of the business. A business can report a profit but still face cash problems if customers pay late or bills fall due first.
+
+Example: a shop makes sales of ₹10,000 and has expenses of ₹7,000, so its simple profit is ₹3,000. But if some customers have not paid yet, the shop may have less cash available today.`},
+{title:"Build your first Excel portfolio project",category:"Skills",readTime:"5 min read",description:"Turn a simple sample sales sheet into a project you can explain.",body:`A small project can help you practise and demonstrate what you know.
+
+Project idea:
+1. Use a sample sales dataset with product, date, quantity and price.
+2. Calculate total sales and check for missing or duplicate values.
+3. Use filters and a pivot table to compare products or months.
+4. Create a chart that answers one clear question.
+5. Write three observations and explain what you would investigate next.
+
+Use sample or public data and do not publish private customer information. Keep a short project summary so you can discuss your process in an interview.`}
+];
+const grid=document.getElementById("articleGrid"),search=document.getElementById("search"),category=document.getElementById("category"),dialog=document.getElementById("articleDialog");
+function renderArticles(){
+ const query=search.value.trim().toLowerCase(),selected=category.value;
+ const matches=articles.filter(a=>(selected==="All"||a.category===selected)&&(a.title+" "+a.description+" "+a.category+" "+a.body).toLowerCase().includes(query));
+ grid.replaceChildren();
+ if(!matches.length){const empty=document.createElement("p");empty.className="empty";empty.textContent="No articles found. Try another keyword or category.";grid.appendChild(empty);return;}
+ matches.forEach(a=>{const card=document.createElement("article");card.className="card";const tag=document.createElement("span");tag.className="tag"+(a.category==="Finance"?" finance":"");tag.textContent=a.category;const title=document.createElement("h3");title.textContent=a.title;const meta=document.createElement("div");meta.className="meta";meta.textContent=a.readTime;const desc=document.createElement("p");desc.textContent=a.description;const button=document.createElement("button");button.className="read";button.textContent="Read article →";button.addEventListener("click",()=>openArticle(a));card.append(tag,title,meta,desc,button);grid.appendChild(card);});
+}
+function openArticle(a){const tag=document.getElementById("dialogCategory");tag.textContent=a.category;tag.className="tag"+(a.category==="Finance"?" finance":"");document.getElementById("dialogTitle").textContent=a.title;document.getElementById("dialogMeta").textContent=a.readTime;document.getElementById("dialogBody").textContent=a.body;dialog.showModal();}
+search.addEventListener("input",renderArticles);category.addEventListener("change",renderArticles);document.getElementById("closeDialog").addEventListener("click",()=>dialog.close());dialog.addEventListener("click",e=>{if(e.target===dialog)dialog.close();});document.getElementById("year").textContent=new Date().getFullYear();renderArticles();
+</script>
+</body></html>
